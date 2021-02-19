@@ -51,10 +51,6 @@ def add_loan():
 # Get all loans
 @app.route('/loan', methods=['GET'])
 def get_loans():
-    # all_loans = Loan.query.all()
-    # result = loans_schema.dump(all_loans)
-    # return jsonify(result)
-
     loan_list = Loan.query.all()
     loans = []
 
